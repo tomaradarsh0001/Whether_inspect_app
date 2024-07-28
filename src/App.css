@@ -163,3 +163,43 @@ html {
     left: -500px;
   }
 }
+
+@media (max-width: 480px) {
+  .moon {
+    width: 70px;
+    height: 70px;
+    top: 20%;
+    left: 60%;
+  }
+
+  .street_light img {
+    height: 40px;
+    margin-left: 10px;
+  }
+
+  .car {
+    height: 50px;
+    bottom: 3px;
+  }
+
+  .car2 {
+    height: 20px;
+    bottom: 15px;
+  }
+
+  .truck2,
+  .truck3 {
+    height: 30px;
+  }
+
+  .bus {
+    height: 105px;
+    bottom: -15px;
+
+  }
+
+  .truck {
+    height: 60px;
+    bottom: 3px;
+  }
+}

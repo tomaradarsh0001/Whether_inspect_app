@@ -381,3 +381,108 @@
     top: -50px;
     left: 5px;
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .birds {
+        width: 70px;
+        height: 70px;
+        top: 5%;
+        left: 30%;
+    }
+
+    .sun {
+        width: 80px;
+        height: 80px;
+        top: 5%;
+        left: 70%;
+    }
+
+    .cloud1,
+    .cloud2,
+    .cloud3,
+    .cloud1_rain,
+    .cloud2_rain,
+    .cloud3_rain {
+        width: 300px;
+        height: 150px;
+    }
+
+    .cloud4_rain,
+    .cloud5_rain,
+    .cloud6_rain {
+        width: 250px;
+        height: 150px;
+    }
+
+    .mountain1,
+    .mountain2,
+    .mountain3,
+    .mountain4 {
+        border-width: 0 150px 200px 150px;
+    }
+
+    .mountain2 {
+        left: 0;
+    }
+
+    .mountain3 {
+        left: 25%;
+    }
+
+    .mountain4 {
+        left: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .birds {
+        width: 50px;
+        height: 50px;
+        top: 0%;
+        left: 20%;
+    }
+
+    .sun {
+        width: 60px;
+        height: 60px;
+        top: 0%;
+        left: 60%;
+    }
+
+    .cloud1,
+    .cloud2,
+    .cloud3,
+    .cloud1_rain,
+    .cloud2_rain,
+    .cloud3_rain {
+        width: 200px;
+        height: 100px;
+    }
+
+    .cloud4_rain,
+    .cloud5_rain,
+    .cloud6_rain {
+        width: 150px;
+        height: 100px;
+    }
+
+    .mountain1,
+    .mountain2,
+    .mountain3,
+    .mountain4 {
+        border-width: 0 100px 150px 100px;
+    }
+
+    .mountain2 {
+        left: -10%;
+    }
+
+    .mountain3 {
+        left: 10%;
+    }
+
+    .mountain4 {
+        left: 30%;
+    }
+}
