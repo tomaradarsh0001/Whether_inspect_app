@@ -388,7 +388,7 @@
     .cloud {
         position: absolute;
         background: transparent;
-        opacity: 0.2;
+        opacity: 0.3;
         border-radius: 50%;
         box-shadow: 0 0 30px rgba(255, 255, 255, 0);
         width: 430px;
@@ -399,7 +399,7 @@
     .cloud_rain {
         position: absolute;
         background: transparent;
-        opacity: 0.4;
+        opacity: 0.9;
         border-radius: 50%;
         box-shadow: 0 0 30px rgba(255, 255, 255, 0);
         width: 430px;
@@ -492,7 +492,7 @@
     .cloud {
         position: absolute;
         background: transparent;
-        opacity: 0.2;
+        opacity: 0.3;
         border-radius: 50%;
         box-shadow: 0 0 30px rgba(255, 255, 255, 0);
         width: 430px;
@@ -503,7 +503,7 @@
     .cloud_rain {
         position: absolute;
         background: transparent;
-        opacity: 0.4;
+        opacity: 0.9;
         border-radius: 50%;
         box-shadow: 0 0 30px rgba(255, 255, 255, 0);
         width: 430px;
@@ -596,7 +596,7 @@
     .cloud {
         position: absolute;
         background: transparent;
-        opacity: 0.2;
+        opacity: 0.3;
         border-radius: 50%;
         box-shadow: 0 0 30px rgba(255, 255, 255, 0);
         width: 430px;
@@ -607,7 +607,7 @@
     .cloud_rain {
         position: absolute;
         background: transparent;
-        opacity: 0.4;
+        opacity: 0.9;
         border-radius: 50%;
         box-shadow: 0 0 30px rgba(255, 255, 255, 0);
         width: 430px;
