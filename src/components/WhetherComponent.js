@@ -12,7 +12,7 @@ const WeatherComponent = () => {
     useEffect(() => {
         const fetchWeather = async () => {
             try {
-                const response = await fetch('https://api.weatherapi.com/v1/current.json?key=6ebfc6023f694554991191357242507&q=28.6719596,%2077.3668959&aqi=no');
+                const response = await fetch('https://api.weatherapi.com/v1/current.json?key=6ebfc6023f694554991191357242507&q=28.6070583,%2077.2511437&aqi=no');
                 const data = await response.json();
                 const is_day = data.current.is_day;
                 const rain = data.current.condition.text;
@@ -21,7 +21,7 @@ const WeatherComponent = () => {
                 // Torrential rain shower
                 // Moderate or heavy rain shower
                 // Light rain shower
-                if (rain === 'Heavy rain' || rain === 'Moderate or heavy rain shower') {
+                if (rain === 'Heavy rain' || rain === 'Moderate or heavy rain shower' || rain === 'Heavy rain at times') {
                     if (hours > 18 || hours < 5) {
                         setComponent(<NightRain />);
 
@@ -30,7 +30,7 @@ const WeatherComponent = () => {
 
                     }
                 }
-                else if (rain === 'Light rain shower' || rain === 'Torrential rain shower') {
+                else if (rain === 'Light rain shower' || rain === 'Torrential rain shower' || rain === 'Patchy rain nearby' || rain === 'Patchy light drizzle' || rain === 'Patchy light rain') {
                     if (hours > 18 || hours < 5) {
                         setComponent(<NightRainLight />);
 
