@@ -18,7 +18,7 @@ const Night = () => {
             <div className="sky_day">
                 <div className="sun"></div>
                 <div className="rain">
-                    {[...Array(100)].map((_, index) => (
+                    {[...Array(400)].map((_, index) => (
                         <div key={index} className="raindrop" style={{ left: `${Math.random() * 100}vw`, animationDelay: `${Math.random() * 2}s` }}></div>
                     ))}
                 </div>
@@ -34,13 +34,13 @@ const Night = () => {
                 </div>
             </div>
             <div class="mountains">
-                <div class="mountain mountain1">
+                <div className="mountain mountain1">
                 </div>
-                <div class="mountain mountain2">
+                <div className="mountain mountain2">
                 </div>
-                <div class="mountain mountain3">
+                <div className="mountain mountain3">
                 </div>
-                <div class="mountain mountain4">
+                <div className="mountain mountain4">
                 </div>
             </div>
             <div className="road_container">

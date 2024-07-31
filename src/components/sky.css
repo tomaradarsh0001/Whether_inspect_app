@@ -114,30 +114,30 @@
 }
 
 .cloud1_rain {
-    top: 0%;
-    left: 20%;
-    width: 470px;
+    top: 3%;
+    left: 17%;
+    width: 650px;
     height: 220px;
 }
 
 .cloud2_rain {
     top: 5%;
-    left: 60%;
-    width: 380px;
+    left: 56%;
+    width: 580px;
     height: 210px;
 }
 
 .cloud3_rain {
-    top: 20%;
-    left: 80%;
-    width: 370px;
+    top: 10%;
+    left: 77%;
+    width: 470px;
     height: 180px;
 }
 
 .cloud4_rain {
-    top: 15%;
+    top: 12%;
     left: 40%;
-    width: 320px;
+    width: 400px;
     height: 180px;
 }
 
@@ -149,8 +149,8 @@
 }
 
 .cloud6_rain {
-    top: 0%;
-    left: 90%;
+    top: 3%;
+    left: 92%;
     width: 260px;
     height: 180px;
 }
@@ -282,22 +282,22 @@
 }
 
 @keyframes sway {
-    50% {
+    0% {
         transform: translateX(10px);
     }
 }
 
 .raindrop:nth-child(odd) {
-    animation-duration: 0.5s;
+    animation-duration: 0.7s;
     animation-timing-function: linear;
-    animation-delay: 0.5s;
+    animation-delay: 0.1s;
     animation-name: fall, sway;
 }
 
 .raindrop:nth-child(even) {
     animation-duration: 0.7s;
     animation-timing-function: linear;
-    animation-delay: 0.3s;
+    animation-delay: 0.1s;
     animation-name: fall, sway;
 }
 
@@ -382,107 +382,314 @@
     left: 5px;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .birds {
-        width: 70px;
-        height: 70px;
-        top: 5%;
-        left: 30%;
+
+@media (min-width: 1366px) {
+
+    .cloud {
+        position: absolute;
+        background: transparent;
+        opacity: 0.2;
+        border-radius: 50%;
+        box-shadow: 0 0 30px rgba(255, 255, 255, 0);
+        width: 430px;
+        height: 200px;
+        animation: float 10s ease-in-out infinite;
     }
 
-    .sun {
-        width: 80px;
-        height: 80px;
-        top: 5%;
-        left: 70%;
+    .cloud_rain {
+        position: absolute;
+        background: transparent;
+        opacity: 0.4;
+        border-radius: 50%;
+        box-shadow: 0 0 30px rgba(255, 255, 255, 0);
+        width: 430px;
+        height: 200px;
+        animation: float 10s ease-in-out infinite;
     }
 
-    .cloud1,
-    .cloud2,
-    .cloud3,
-    .cloud1_rain,
-    .cloud2_rain,
-    .cloud3_rain {
-        width: 300px;
-        height: 150px;
-    }
-
-    .cloud4_rain,
-    .cloud5_rain,
-    .cloud6_rain {
-        width: 250px;
-        height: 150px;
-    }
-
-    .mountain1,
-    .mountain2,
-    .mountain3,
-    .mountain4 {
-        border-width: 0 150px 200px 150px;
-    }
-
-    .mountain2 {
-        left: 0;
-    }
-
-    .mountain3 {
-        left: 25%;
-    }
-
-    .mountain4 {
-        left: 50%;
-    }
-}
-
-@media (max-width: 480px) {
-    .birds {
-        width: 50px;
-        height: 50px;
+    .cloud1 {
         top: 0%;
         left: 20%;
-    }
-
-    .sun {
-        width: 60px;
-        height: 60px;
-        top: 0%;
-        left: 60%;
-    }
-
-    .cloud1,
-    .cloud2,
-    .cloud3,
-    .cloud1_rain,
-    .cloud2_rain,
-    .cloud3_rain {
         width: 200px;
-        height: 100px;
+        height: 160px;
     }
 
-    .cloud4_rain,
-    .cloud5_rain,
+    .cloud2 {
+        top: 5%;
+        left: 60%;
+        width: 200px;
+        height: 160px;
+    }
+
+    .cloud3 {
+        top: 20%;
+        left: 80%;
+        width: 200px;
+        height: 140px;
+    }
+
+    .cloud1_rain {
+        top: 3%;
+        left: 20%;
+        width: 230px;
+        height: 140px;
+    }
+
+    .cloud2_rain {
+        top: 5%;
+        left: 57%;
+        width: 230px;
+        height: 130px;
+    }
+
+    .cloud3_rain {
+        top: 10%;
+        left: 73%;
+        width: 220px;
+        height: 130px;
+    }
+
+    .cloud4_rain {
+        top: 8%;
+        left: 35%;
+        width: 290px;
+        height: 150px;
+    }
+
+    .cloud5_rain {
+        top: 5%;
+        left: 1%;
+        width: 270px;
+        height: 140px;
+    }
+
     .cloud6_rain {
-        width: 150px;
-        height: 100px;
+        top: 3%;
+        left: 88%;
+        width: 260px;
+        height: 180px;
     }
 
-    .mountain1,
-    .mountain2,
-    .mountain3,
-    .mountain4 {
-        border-width: 0 100px 150px 100px;
+    @keyframes float {
+        0% {
+            transform: translateX(0);
+        }
+
+        50% {
+            transform: translateX(-30px);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
     }
 
-    .mountain2 {
-        left: -10%;
+}
+
+
+@media (min-width: 1920px) {
+
+    .cloud {
+        position: absolute;
+        background: transparent;
+        opacity: 0.2;
+        border-radius: 50%;
+        box-shadow: 0 0 30px rgba(255, 255, 255, 0);
+        width: 430px;
+        height: 200px;
+        animation: float 10s ease-in-out infinite;
     }
 
-    .mountain3 {
-        left: 10%;
+    .cloud_rain {
+        position: absolute;
+        background: transparent;
+        opacity: 0.4;
+        border-radius: 50%;
+        box-shadow: 0 0 30px rgba(255, 255, 255, 0);
+        width: 430px;
+        height: 200px;
+        animation: float 10s ease-in-out infinite;
     }
 
-    .mountain4 {
-        left: 30%;
+    .cloud1 {
+        top: 0%;
+        left: 20%;
+        width: 470px;
+        height: 220px;
     }
+
+    .cloud2 {
+        top: 5%;
+        left: 60%;
+        width: 380px;
+        height: 210px;
+    }
+
+    .cloud3 {
+        top: 20%;
+        left: 80%;
+        width: 370px;
+        height: 180px;
+    }
+
+    .cloud1_rain {
+        top: 3%;
+        left: 20%;
+        width: 350px;
+        height: 220px;
+    }
+
+    .cloud2_rain {
+        top: 5%;
+        left: 54%;
+        width: 380px;
+        height: 210px;
+    }
+
+    .cloud3_rain {
+        top: 10%;
+        left: 73%;
+        width: 320px;
+        height: 180px;
+    }
+
+    .cloud4_rain {
+        top: 10%;
+        left: 37%;
+        width: 340px;
+        height: 180px;
+    }
+
+    .cloud5_rain {
+        top: 9%;
+        left: 0%;
+        width: 411px;
+        height: 180px;
+    }
+
+    .cloud6_rain {
+        top: 3%;
+        left: 88%;
+        width: 260px;
+        height: 180px;
+    }
+
+    @keyframes float {
+        0% {
+            transform: translateX(0);
+        }
+
+        50% {
+            transform: translateX(-30px);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+}
+
+
+@media (min-width: 2560px) {
+
+    .cloud {
+        position: absolute;
+        background: transparent;
+        opacity: 0.2;
+        border-radius: 50%;
+        box-shadow: 0 0 30px rgba(255, 255, 255, 0);
+        width: 430px;
+        height: 200px;
+        animation: float 10s ease-in-out infinite;
+    }
+
+    .cloud_rain {
+        position: absolute;
+        background: transparent;
+        opacity: 0.4;
+        border-radius: 50%;
+        box-shadow: 0 0 30px rgba(255, 255, 255, 0);
+        width: 430px;
+        height: 200px;
+        animation: float 10s ease-in-out infinite;
+    }
+
+    .cloud1 {
+        top: 0%;
+        left: 20%;
+        width: 470px;
+        height: 270px;
+    }
+
+    .cloud2 {
+        top: 5%;
+        left: 60%;
+        width: 450px;
+        height: 260px;
+    }
+
+    .cloud3 {
+        top: 20%;
+        left: 80%;
+        width: 490px;
+        height: 240px;
+    }
+
+    .cloud1_rain {
+        top: 5%;
+        left: 17%;
+        width: 580px;
+        height: 280px;
+    }
+
+    .cloud2_rain {
+        top: 5%;
+        left: 56%;
+        width: 580px;
+        height: 320px;
+    }
+
+    .cloud3_rain {
+        top: 7%;
+        left: 77%;
+        width: 470px;
+        height: 280px;
+    }
+
+    .cloud4_rain {
+        top: 8%;
+        left: 40%;
+        width: 480px;
+        height: 280px;
+    }
+
+    .cloud5_rain {
+        top: 6%;
+        left: 0%;
+        width: 480px;
+        height: 280px;
+    }
+
+    .cloud6_rain {
+        top: 2%;
+        left: 92%;
+        width: 260px;
+        height: 180px;
+    }
+
+    @keyframes float {
+        0% {
+            transform: translateX(0);
+        }
+
+        50% {
+            transform: translateX(-30px);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
 }

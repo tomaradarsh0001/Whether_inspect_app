@@ -26,14 +26,14 @@ const Day = () => {
                     <img src={Cloud1} className="cloud cloud3" alt='Not found' />
                 </div>
             </div>
-            <div class="mountains">
-                <div class="mountain mountain1">
+            <div className="mountains">
+                <div className="mountain mountain1">
                 </div>
-                <div class="mountain mountain2">
+                <div className="mountain mountain2">
                 </div>
-                <div class="mountain mountain3">
+                <div className="mountain mountain3">
                 </div>
-                <div class="mountain mountain4">
+                <div className="mountain mountain4">
                 </div>
             </div>
             <div className="road_container">

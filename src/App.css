@@ -88,22 +88,7 @@ html {
   height: 15%;
 }
 
-.street_light {
-  position: absolute;
-  bottom: 5%;
-  z-index: 1;
-}
 
-.street_light img {
-  height: 90px;
-  margin-left: 110px;
-  filter: drop-shadow(0 0 20px rgba(255, 255, 0, 0.6));
-  transition: filter 0.3s ease-in-out;
-}
-
-.street_light img:hover {
-  filter: drop-shadow(0 0 30px rgba(255, 255, 0, 1));
-}
 
 .car {
   position: absolute;
@@ -172,9 +157,15 @@ html {
     left: 60%;
   }
 
+  .street_light {
+    position: static;
+    bottom: 10%;
+    z-index: 1;
+  }
+
   .street_light img {
-    height: 40px;
-    margin-left: 10px;
+    height: 30px;
+    margin-left: 23px;
   }
 
   .car {
@@ -202,4 +193,247 @@ html {
     height: 60px;
     bottom: 3px;
   }
+
+
+}
+
+@media (min-width: 1380px) {
+  .moon {
+    width: 70px;
+    height: 70px;
+    top: 20%;
+    left: 60%;
+  }
+
+  .street_light {
+    position: absolute;
+    bottom: 10%;
+    z-index: 1;
+  }
+
+  .street_light img {
+    height: 40px;
+    margin-left: 65px;
+  }
+
+  .car {
+    height: 50px;
+    bottom: 0px;
+  }
+
+  .car2 {
+    height: 20px;
+    bottom: 17px;
+  }
+
+  .truck2,
+  .truck3 {
+    height: 30px;
+  }
+
+  .bus {
+    height: 113px;
+    bottom: -20px;
+
+  }
+
+  .truck {
+    height: 70px;
+    bottom: 0px;
+  }
+
+
+}
+
+@media (min-width: 1366px) {
+  .moon {
+    width: 100px;
+    height: 100px;
+    top: 18%;
+    left: 58%;
+  }
+
+
+  .street_light {
+    position: absolute;
+    bottom: 10%;
+    z-index: 1;
+  }
+
+  .street_light img {
+    height: 60px;
+    margin-left: 85px;
+  }
+
+  .car {
+    height: 50px;
+    bottom: 10px;
+  }
+
+  .car2 {
+    height: 20px;
+    bottom: 25px;
+  }
+
+  .truck2,
+  .truck3 {
+    height: 30px;
+  }
+
+  .bus {
+    height: 105px;
+    bottom: -15px;
+
+  }
+
+  .truck {
+    height: 70px;
+    bottom: 20px;
+  }
+
+
+}
+
+@media (min-width: 1920px) {
+  .moon {
+    width: 140px;
+    height: 140px;
+    top: 18%;
+    left: 58%;
+  }
+
+  .street_light {
+    position: absolute;
+    bottom: 5%;
+    z-index: 1;
+  }
+
+  .street_light img {
+    height: 90px;
+    margin-left: 110px;
+    filter: drop-shadow(0 0 20px rgba(255, 255, 0, 0.6));
+    transition: filter 0.3s ease-in-out;
+  }
+
+  .car {
+    position: absolute;
+    left: 200px;
+    bottom: -30px;
+    height: 150px;
+    animation: moveCar 8s linear infinite;
+  }
+
+  .car2 {
+    position: absolute;
+    margin-left: 90px;
+    bottom: 10px;
+    height: 60px;
+    animation: moveCar 5s linear infinite;
+  }
+
+  .truck2 {
+    position: absolute;
+    left: 200px;
+    bottom: 18px;
+    height: 90px;
+    animation: moveCar 14s linear infinite;
+  }
+
+  .truck3 {
+    position: absolute;
+    left: 200px;
+    bottom: 18px;
+    height: 90px;
+    animation: moveCar 16s linear infinite;
+  }
+
+  .bus {
+    position: absolute;
+    left: 200px;
+    bottom: -70px;
+    height: 270px;
+    animation: moveCar 12s linear infinite;
+  }
+
+  .truck {
+    position: absolute;
+    margin-left: 200px;
+    left: 200px;
+    bottom: -28px;
+    height: 180px;
+    animation: moveCar 10s linear infinite;
+  }
+
+}
+
+@media (min-width: 2500px) {
+  .moon {
+    width: 180px;
+    height: 180px;
+    top: 18%;
+    left: 58%;
+  }
+
+  .street_light {
+    position: absolute;
+    bottom: 5%;
+    z-index: 1;
+  }
+
+  .street_light img {
+    height: 90px;
+    margin-left: 160px;
+    filter: drop-shadow(0 0 20px rgba(255, 255, 0, 0.6));
+    transition: filter 0.3s ease-in-out;
+  }
+
+  .car {
+    position: absolute;
+    left: 200px;
+    bottom: -30px;
+    height: 150px;
+    animation: moveCar 8s linear infinite;
+  }
+
+  .car2 {
+    position: absolute;
+    margin-left: 90px;
+    bottom: 10px;
+    height: 60px;
+    animation: moveCar 5s linear infinite;
+  }
+
+  .truck2 {
+    position: absolute;
+    left: 200px;
+    bottom: 18px;
+    height: 90px;
+    animation: moveCar 14s linear infinite;
+  }
+
+  .truck3 {
+    position: absolute;
+    left: 200px;
+    bottom: 18px;
+    height: 90px;
+    animation: moveCar 16s linear infinite;
+  }
+
+  .bus {
+    position: absolute;
+    left: 200px;
+    bottom: -70px;
+    height: 270px;
+    animation: moveCar 12s linear infinite;
+  }
+
+  .truck {
+    position: absolute;
+    margin-left: 200px;
+    left: 200px;
+    bottom: -28px;
+    height: 180px;
+    animation: moveCar 10s linear infinite;
+  }
+
 }

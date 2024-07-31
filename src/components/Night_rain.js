@@ -30,7 +30,7 @@ const Night = () => {
                 </div>
                 <div className="moon"></div>
                 <div className="rain">
-                    {[...Array(100)].map((_, index) => (
+                    {[...Array(400)].map((_, index) => (
                         <div key={index} className="raindrop" style={{ left: `${Math.random() * 100}vw`, animationDelay: `${Math.random() * 2}s` }}></div>
                     ))}
                 </div>
@@ -45,14 +45,14 @@ const Night = () => {
                     <img src={Cloud1} className="cloud_rain cloud1_rain" alt='Not found' />
                 </div>
             </div>
-            <div class="mountains_night">
-                <div class="mountain_night mountain1_night">
+            <div className="mountains_night">
+                <div className="mountain_night mountain1_night">
                 </div>
-                <div class="mountain_night mountain2_night">
+                <div className="mountain_night mountain2_night">
                 </div>
-                <div class="mountain_night mountain3_night">
+                <div className="mountain_night mountain3_night">
                 </div>
-                <div class="mountain_night mountain4_night">
+                <div className="mountain_night mountain4_night">
                 </div>
             </div>
             <div className="road_container">
