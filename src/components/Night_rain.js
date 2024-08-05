@@ -9,6 +9,7 @@ import Bus from '../assets/images/bus.gif'
 import Truck from '../assets/images/truck.gif'
 import Cloud1 from '../assets/images/day_cloud.png'
 import Cloud2 from '../assets/images/cloud2.png'
+import Clock from '../components/clock'
 
 const getRandomPosition = () => ({
     top: `${Math.random() * 100}%`,
@@ -27,6 +28,8 @@ const Night = () => {
                             style={getRandomPosition()}
                         ></div>
                     ))}
+                </div>
+                <div className='time'>      <Clock />
                 </div>
                 <div className="moon"></div>
                 <div className="rain">

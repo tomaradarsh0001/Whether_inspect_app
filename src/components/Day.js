@@ -13,11 +13,15 @@ import Cloud1 from '../assets/images/day_cloud.png'
 import Cloud2 from '../assets/images/cloud2.png'
 import Tree1 from '../assets/images/tree1.gif'
 import Bird from '../assets/images/birds.gif'
+import Clock from '../components/clock'
+
 
 const Day = () => {
     return (
         <div className="sky-scene">
             <div className="sky_day">
+                <div className='time'>      <Clock />
+                </div>
                 <div className="sun"></div>
                 <div className="bird"><img src={Bird} className='birds' alt='Not found' />
                 </div>

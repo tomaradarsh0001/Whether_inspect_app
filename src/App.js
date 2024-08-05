@@ -1,5 +1,5 @@
 import './App.css';
-import WeatherComponent from './components/WhetherComponent'
+import WeatherComponent from './components/Eve_rain'
 
 
 function App() {

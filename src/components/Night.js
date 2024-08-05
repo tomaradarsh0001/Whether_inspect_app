@@ -12,6 +12,7 @@ import Truck from '../assets/images/truck.gif'
 import Cloud1 from '../assets/images/day_cloud.png'
 import Cloud2 from '../assets/images/cloud2.png'
 import Tree1 from '../assets/images/tree2.gif'
+import Clock from '../components/clock'
 
 
 const getRandomPosition = () => ({
@@ -31,6 +32,8 @@ const Night = () => {
                             style={getRandomPosition()}
                         ></div>
                     ))}
+                </div>
+                <div className='time'>      <Clock />
                 </div>
                 <div className="moon"></div>
                 <div className="">
