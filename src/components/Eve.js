@@ -11,12 +11,13 @@ import Truck2 from '../assets/images/truck2.gif'
 import Truck3 from '../assets/images/truck3.gif'
 import Cloud1 from '../assets/images/day_cloud.png'
 import Cloud2 from '../assets/images/cloud2.png'
-import Tree1 from '../assets/images/tree1.gif'
 import Bird from '../assets/images/birds.gif'
+import Tree1 from '../assets/images/tree1.gif'
 
 const Day = () => {
+
     return (
-        <div className="sky-scene">
+        <div className="sky-scene_eve">
             <div className="sky_day">
                 <div className="sun"></div>
                 <div className="bird"><img src={Bird} className='birds' alt='Not found' />
@@ -38,7 +39,6 @@ const Day = () => {
                 <div className="mountain mountain4">
                 </div>
             </div>
-
             <div className="road_container">
                 <div className='tree'>
                     {[...Array(10)].map((_, index) => (
@@ -46,21 +46,25 @@ const Day = () => {
                     ))}
 
                 </div>
+                {/* <img src={Tree1} className='tree' alt='Not found' /> */}
                 <img src={Car} alt='car not found' className="car" />
                 <img src={Car2} alt='car not found' className="car2" />
                 <img src={Bus} alt='car not found' className="bus" />
                 <img src={Truck2} alt='car not found' className="truck2" />
                 <img src={Truck3} alt='car not found' className="truck3" />
                 <img src={Truck} alt='car not found' className="truck" />
+
                 <div className="street_light">
                     {[...Array(11)].map((_, index) => (
                         <img key={index} src={Light} alt='Street Light' />
                     ))}
                 </div>
+
                 <div className="road"></div>
             </div>
 
-        </div>
+
+        </div >
     );
 };
 

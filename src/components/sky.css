@@ -16,6 +16,15 @@
     /* Blueish sky */
 }
 
+.sky-scene_eve {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(to top, #d0f9ff, #f3ca7e);
+    /* Blueish sky */
+}
+
 .sky_day {
     position: relative;
     width: 100%;
@@ -253,6 +262,8 @@
     border-color: transparent transparent #131813 transparent;
     left: 70%;
 }
+
+
 
 /* Rain Animation */
 .rain {
