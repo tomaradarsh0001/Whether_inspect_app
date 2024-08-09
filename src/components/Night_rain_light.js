@@ -10,6 +10,8 @@ import Truck from '../assets/images/truck.gif'
 import Cloud1 from '../assets/images/day_cloud.png'
 import Cloud2 from '../assets/images/cloud2.png'
 import Clock from '../components/clock'
+import Tree1 from '../assets/images/tree2.gif'
+
 
 
 const getRandomPosition = () => ({
@@ -60,6 +62,12 @@ const Night = () => {
                 </div>
             </div>
             <div className="road_container">
+                <div className='tree'>
+                    {[...Array(10)].map((_, index) => (
+                        <img key={index} src={Tree1} alt='Tree' />
+                    ))}
+
+                </div>
                 <img src={Car} alt='car not found' className="car" />
                 <img src={Car2} alt='car not found' className="car2" />
                 <img src={Bus} alt='car not found' className="bus" />
