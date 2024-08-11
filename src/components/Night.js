@@ -3,12 +3,12 @@ import React from 'react';
 import '../App.css';
 import '../components/sky.css';
 import Light from '../assets/images/street_light_night.png'
-import Car from '../assets/images/car.gif'
-import Car2 from '../assets/images/car3.gif'
-import Truck2 from '../assets/images/truck2.gif'
-import Truck3 from '../assets/images/truck3.gif'
-import Bus from '../assets/images/bus.gif'
-import Truck from '../assets/images/truck.gif'
+import Car from '../assets/images/carnight.gif'
+import Car2 from '../assets/images/car3night.gif'
+import Bus from '../assets/images/busnight.gif'
+import Truck from '../assets/images/trucknight.gif'
+import Truck2 from '../assets/images/truck2night.gif'
+import Truck3 from '../assets/images/truck3night.gif'
 import Cloud1 from '../assets/images/day_cloud.png'
 import Cloud2 from '../assets/images/cloud2.png'
 import Tree1 from '../assets/images/tree2.gif'

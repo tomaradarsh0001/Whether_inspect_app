@@ -395,7 +395,7 @@ html {
 
 }
 
-@media (min-width: 2500px) {
+@media (min-width: 2300px) {
   .moon {
     width: 180px;
     height: 180px;
@@ -405,7 +405,7 @@ html {
 
   .street_light {
     position: relative;
-    bottom: 5%;
+    bottom: -45%;
     z-index: 2;
   }
 
@@ -420,12 +420,15 @@ html {
 
   .tree {
     position: absolute;
-    bottom: 10px;
-    /* Adjust as needed */
-    left: 50px;
-    /* Adjust as needed */
+    width: 100vw;
+    bottom: -2%;
     z-index: 1;
-    /* Ensure trees are behind the street lights */
+  }
+
+  .tree img {
+    height: 200px;
+    margin-left: 60px;
+
   }
 
   .car {

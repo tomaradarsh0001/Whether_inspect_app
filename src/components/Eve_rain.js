@@ -2,7 +2,7 @@
 import React from 'react';
 import '../App.css';
 import '../components/sky.css';
-import Light from '../assets/images/street_light_day.png'
+import Light from '../assets/images/street_light_night.png'
 import Car from '../assets/images/car.gif'
 import Car2 from '../assets/images/car3.gif'
 import Bus from '../assets/images/bus.gif'
