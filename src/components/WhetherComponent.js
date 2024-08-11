@@ -8,6 +8,9 @@ import NightRain from '../components/Night_rain';
 import NightRainLight from '../components/Night_rain_light';
 import DayRainLight from '../components/Day_rain_light';
 import EveRainLight from '../components/Eve_rain_light';
+import DayCloudy from '../components/Day_cloud';
+import EveCloudy from '../components/Eve_cloud';
+import NightCloudy from '../components/Night_cloud';
 
 const WeatherComponent = () => {
     const [component, setComponent] = useState(null);
@@ -53,6 +56,7 @@ const WeatherComponent = () => {
                 const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=6ebfc6023f694554991191357242507&q=${lat},${lon}&aqi=no`);
                 const data = await response.json();
                 const rain = data.current.condition.text;
+                console.log("API respone is " + rain);
                 const localtime = data.location.localtime;
                 const hours = new Date(localtime).getHours();
                 setLocationName(data.location.name);
@@ -66,18 +70,33 @@ const WeatherComponent = () => {
                     else {
                         setComponent(<DayRain />);
                     }
-                } else if (rain === 'Light rain shower' || rain === 'Torrential rain shower' || rain === 'Patchy rain nearby' || rain === 'Patchy light drizzle' || rain === 'Patchy light rain') {
-                    if (hours => 19 || hours <= 4) {
+                } else if (rain === 'Light rain shower' ||
+                    rain === 'Torrential rain shower' ||
+                    rain === 'Patchy rain nearby' ||
+                    rain === 'Patchy light drizzle' ||
+                    rain === 'Patchy light rain') {
+
+                    if (hours >= 19 || hours < 4) {
                         setComponent(<NightRainLight />);
-                    } else if (hours > 17 || hours < 19) {
+                    } else if (hours >= 17 && hours < 19) {
                         setComponent(<EveRainLight />);
                     } else {
                         setComponent(<DayRainLight />);
                     }
-                } else {
-                    if (hours >= 4 && hours < 17) {
+                }
+                else if (rain === 'Cloudy' || rain === 'Partly Cloudy') {
+                    if (hours >= 19 || hours < 4) {
+                        setComponent(<NightCloudy />);
+                    } else if (hours >= 17 && hours < 19) {
+                        setComponent(<EveCloudy />);
+                    } else {
+                        setComponent(<DayCloudy />);
+                    }
+                }
+                else {
+                    if (hours >= 19 || hours < 4) {
                         setComponent(<Day />);
-                    } else if (hours >= 17 && hours < 18) {
+                    } else if (hours >= 17 && hours < 21) {
                         setComponent(<Eve />);
                     } else {
                         setComponent(<Night />);

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Teko:wght@300..700&display=swap');
+
 body,
 html {
   margin: 0;
@@ -55,10 +57,10 @@ html {
 }
 
 .time {
-  color: #0f6d03;
-  font-size: 28px;
+  color: #22c501;
+  font-size: 20px;
   padding: 15px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Rajdhani", sans-serif;
   opacity: 0.7;
 }
 
