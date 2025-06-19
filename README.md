@@ -23,9 +23,9 @@ Welcome to **Weather Inspect**, a dynamic React.js application that determines y
 
 ## 📸 Screenshots
 
-| Morning | Night | Cloudy | Rainy |
+| Morning | Eve | Rainy |
 |--------|-------|--------|-------|
-| ![](images/morning.png) | ![](images/night.png) | ![](images/cloudy.png) | ![](images/rainy.png) |
+| ![](images/day.png) | ![](images/eve.png) | ![](images/raining.png) |
 
 ---
 
