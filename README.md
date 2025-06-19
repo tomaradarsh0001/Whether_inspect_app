@@ -21,13 +21,44 @@ Welcome to **Weather Inspect**, a dynamic React.js application that determines y
 
 ---
 
-## 📸 Screenshots
-
-| Morning | Eve | Rainy |
-|--------|-------|--------|-------|
-| ![](images/day.png) | ![](images/eve.png) | ![](images/raining.png) |
+🧰 Built With
+⚛️ React.js
+🌐 OpenWeatherMap API (or your chosen API)
+💅 CSS3 / Tailwind / Styled Components (your choice)
+📂 Geolocation API
 
 ---
+
+
+🔐 Permissions Required
+📍 Location access is required to personalize your weather experience
+
+
+---
+
+📁 Folder Structure
+weather-inspect/
+├── public/
+├── src/
+│   ├── components/
+│   ├── images/         # 🌄 Weather state images
+│   ├── App.js
+│   └── ...
+└── README.md
+
+---
+
+## 📸 Screenshots
+
+### 🌞 **Morning**
+<img src="images/day.png" alt="Morning" width="300"/>
+
+### 🌇 **Evening**
+<img src="images/eve.png" alt="Evening" width="300"/>
+
+### 🌧️ **Rainy**
+<img src="images/raining.png" alt="Rainy" width="300"/>
+
 
 ## 🚀 How to Run Locally
 
