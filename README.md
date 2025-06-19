@@ -37,33 +37,46 @@ Welcome to **Weather Inspect**, a dynamic React.js application that determines y
 ---
 
 📁 Folder Structure
-weather-inspect/
-├── public/
-├── src/
-│   ├── components/
-│   ├── images/         # 🌄 Weather state images
-│   ├── App.js
-│   └── ...
-└── README.md
+weather-inspect/ <br>
+├── public/ <br>
+├── src/ <br>
+│   ├── components/ <br>
+│   ├── images/ <br>
+│   ├── App.js <br>
+│   └── ... <br>
+└── README.md <br>
+
+---
+
+## 🎬 Demo Video
+
+Watch a short preview of the Weather Inspect App in action! 👇
+
+<video src="video.mp4" controls width="600">
+  Your browser does not support the video tag.
+</video>
 
 ---
 
 ## 📸 Screenshots
 
 ### 🌞 **Morning**
-<img src="images/day.png" alt="Morning" width="300"/>
+<img src="images/day.png" alt="Morning" />
 
 ### 🌇 **Evening**
-<img src="images/eve.png" alt="Evening" width="300"/>
+<img src="images/eve.png" alt="Evening" />
 
 ### 🌧️ **Rainy**
-<img src="images/raining.png" alt="Rainy" width="300"/>
+<img src="images/raining.png" alt="Rainy" />
 
 
 ## 🚀 How to Run Locally
 
 ```bash
 git clone https://github.com/your-username/weather-inspect.git
+
 cd weather-inspect
+
 npm install
+
 npm start
