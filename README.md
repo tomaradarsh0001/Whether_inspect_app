@@ -52,9 +52,10 @@ weather-inspect/ <br>
 
 Watch a short preview of the Weather Inspect App in action! 👇
 
-<video src="video.mp4" controls width="600">
-  Your browser does not support the video tag.
-</video>
+## 🎬 Demo Preview
+
+<img src="images/video.gif" alt="Weather App Demo" width="600"/>
+
 
 ---
 
