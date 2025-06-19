@@ -54,7 +54,7 @@ Watch a short preview of the Weather Inspect App in action! 👇
 
 ## 🎬 Demo Preview
 
-<img src="images/video.gif" alt="Weather App Demo" width="600"/>
+<img src="images/video.gif" alt="Weather App Demo" />
 
 
 ---
